@@ -4,7 +4,7 @@ import { css, styled } from "styled-components";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import Banner from "../../public/svg/hero/banner.svg";
-import BannerUrl from "../../public/svg/hero/banner.svg?url";
+// import BannerUrl from "../../public/svg/hero/banner.svg?url";
 import Brightness from "../../public/svg/hero/brightness.svg";
 
 const HeroWrapper = styled.div`
@@ -166,12 +166,10 @@ const Hero = () => {
                   v3.1 released. <a href="">Learn more</a>
                 </div>
               </div>
-              <div className="content__title ">
-                Your data with real-time analytics
-              </div>
+              <div className="content__title ">Your data with real-time analytics</div>
               <p>
-                Harness the potential of Big Data Analytics & Cloud Services and
-                become a data-driven organization with Needle tail
+                Harness the potential of Big Data Analytics & Cloud Services and become a data-driven organization with
+                Needle tail
               </p>
               <div className="content__button flex gap-[1.6rem]">
                 <Button $primary>Start free trial</Button>
@@ -179,15 +177,8 @@ const Hero = () => {
               </div>
             </Content>
             <div>
-              {/* <Banner /> */}
-              <Image
-                src={BannerUrl}
-                alt="image1"
-                className=""
-                width={472}
-                height={370}
-                priority
-              />
+              <Banner />
+              {/* <Image src={BannerUrl} alt="image1" className="" width={472} height={370} priority /> */}
             </div>
           </div>
         </Wide>

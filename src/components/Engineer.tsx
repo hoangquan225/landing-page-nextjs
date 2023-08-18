@@ -4,7 +4,7 @@ import { css, styled } from "styled-components";
 import Image from "next/image";
 import Compass from "../../public/svg/icons/compass.svg";
 import BannerSub from "../../public/svg/engineer/image6.svg";
-import bannerSubUrl from "../../public/svg/engineer/image6.svg?url";
+// import bannerSubUrl from "../../public/svg/engineer/image6.svg?url";
 
 const EngineerContainer = styled.div`
   display: flex;
@@ -176,20 +176,13 @@ const Engineer = () => {
           </div>
           <div className="content__title">Data-driven pipelines in minutes</div>
           <p>
-            Maintenance-free data pipelines with quick set-up and
-            straight-forward deployments that are powered by a modern & scalable
-            platform.
+            Maintenance-free data pipelines with quick set-up and straight-forward deployments that are powered by a
+            modern & scalable platform.
           </p>
         </Content>
         <div className="engineer__img">
-          {/* <BannerSub className="w-[100%]" /> */}
-          <Image
-            src={bannerSubUrl}
-            alt="annerSub"
-            width={684}
-            height={414}
-            priority
-          />
+          <BannerSub className="w-[100%]" />
+          {/* <Image src={bannerSubUrl} alt="annerSub" width={684} height={414} priority /> */}
         </div>
       </EngineerContainer>
     </Wide>
